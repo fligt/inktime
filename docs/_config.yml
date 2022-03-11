@@ -46,7 +46,7 @@ defaults:
       search: true
       sidebar: home_sidebar
       topnav: topnav
-      datatable: true
+
   -
     scope:
       path: ""
@@ -59,8 +59,9 @@ defaults:
 
 sidebars:
 - home_sidebar 
-# trying to fix broken links in sidebar 
-#permalink: pretty
 
-theme: jekyll-theme-cayman
+plugins:
+    - jekyll-remote-theme
+    
+remote_theme: fastai/nbdev-jekyll-theme
 baseurl: /inktime/
