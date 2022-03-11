@@ -2,7 +2,7 @@
 > Color physics simulations for interdisciplinary investigation of historic drawings and photographs
 
 
-What was the original appearance of Vincent van Gogh's ink drawings? Can we predict the fading behavior of color photographs? Many intriguing questions that we have about the colors of artworks on paper require the ability to model the color physics of translucent colors. 
+What was the original appearance of Vincent van Gogh's ink drawings? Can we predict the fading behavior of color photographs? Many intriguing questions that we have about the colors of artworks on paper require the ability to model the color physics of translucent colors.   
 
 `Inktime` is an open source python package that enables simulation of color change of translucent and transparent inks, dyes and paints on paper.   
 
