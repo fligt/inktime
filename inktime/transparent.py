@@ -278,7 +278,7 @@ def primaries(rgb_img, method='nearest', thresh=0, verbose=False):
 
 
 def _get_nod_xy(rgb_img, thresh=0):
-    '''Convert ink pixels in *rgb_img* into normalized optical density tuple list. '''
+    '''Convert ink pixels > `thresh` in `rgb_img` into normalized optical density tuple list. '''
 
     nod_img = optical_density(rgb_img, normalize=True, thresh=thresh)
     norm = np.sum(nod_img, axis=2)
