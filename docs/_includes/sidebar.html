@@ -19,7 +19,8 @@
           <li><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
 
           {% else %}
-          <li><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
+          <!-- 2022-03-13 fligt inserted class="active"-->
+          <li><a class="active" href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
           {% endif %}
           {% for subfolders in folderitem.subfolders %}
           {% if subfolders.output contains "web" %}
