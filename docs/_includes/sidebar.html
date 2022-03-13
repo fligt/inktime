@@ -34,7 +34,8 @@
                   {% elsif pageurl == subfolderitem.url %}
                   <li class="active"><a href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
                   {% else %}
-                  <li><a href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
+                  <!-- also here -->
+                  <li><a class="active" href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
