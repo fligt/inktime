@@ -1,10 +1,10 @@
 {
   "inktime": {
     "Overview": "/",
-    "Transparent thinking  ": "transparent-thinking.html",
-    "Trajectories in OD space ": "trajectories-in-od-space.html",
-    "Color physics of transparent dyes ": "Color-physics-of-transparent-dyes.html",
-    "Color physics of translucent inks  ": "Color-physics-of-translucent-inks.html",
-    "Downloading demo data ": "downloading-demo-data.html"
+    "Transparent thinking": "/transparent-thinking.html",
+    "Trajectories in OD space": "/trajectories-in-od-space.html",
+    "Color physics of transparent dyes": "/Color-physics-of-transparent-dyes.html",
+    "Color physics of translucent inks": "/Color-physics-of-translucent-inks.html",
+    "Downloading demo data": "/downloading-demo-data.html"
   }
 }
