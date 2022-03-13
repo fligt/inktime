@@ -10,20 +10,20 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: 'Transparent thinking  '
-      url: transparent-thinking.html
+      title: Transparent thinking
+      url: /transparent-thinking.html
     - output: web,pdf
-      title: 'Trajectories in OD space '
-      url: trajectories-in-od-space.html
+      title: Trajectories in OD space
+      url: /trajectories-in-od-space.html
     - output: web,pdf
-      title: 'Color physics of transparent dyes '
-      url: Color-physics-of-transparent-dyes.html
+      title: Color physics of transparent dyes
+      url: /Color-physics-of-transparent-dyes.html
     - output: web,pdf
-      title: 'Color physics of translucent inks  '
-      url: Color-physics-of-translucent-inks.html
+      title: Color physics of translucent inks
+      url: /Color-physics-of-translucent-inks.html
     - output: web,pdf
-      title: 'Downloading demo data '
-      url: downloading-demo-data.html
+      title: Downloading demo data
+      url: /downloading-demo-data.html
     output: web
     title: inktime
   output: web
