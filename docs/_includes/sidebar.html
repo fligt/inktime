@@ -10,7 +10,7 @@
   <li>
       <a href="#">{{ folder.title }}</a>
       <!-- and also here -->
-      <ul class="expanded">
+      <ul class="expanded" style="display: block">
           {% for folderitem in folder.folderitems %}
           {% if folderitem.output contains "web" %}
           {% if folderitem.external_url %}
