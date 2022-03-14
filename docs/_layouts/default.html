@@ -32,9 +32,9 @@
             });
 
             // activate menu items where href is matching to current page
-            // fligt removed the regex match 2022-03-14
+            // fligt replaced the regex match with liquid url 
             //$("#mysidebar a[href='" + location.pathname.match(/(\/[^\/]*)$/)[1] + "']")
-            $("#mysidebar a")
+            $("#mysidebar a[href='{{ page.url | absolute_url }}'")
                 .parents('li').addClass('active')
                 .parents('ul').css('display', 'block');
         });
@@ -80,8 +80,6 @@
 </head>
 <body>
 {% include topnav.html %}
-<!-- temporary liquid to test --> 
-{{ page.url | absolute_url }}
 <!-- Page Content -->
 <div class="container">
   <div id="main">
