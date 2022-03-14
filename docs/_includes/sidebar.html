@@ -1,7 +1,8 @@
 {% assign sidebar = site.data.sidebars[page.sidebar].entries %}
 {% assign pageurl = page.url  | remove: ".html" %}
 
-<ul id="mysidebar" class="nav">
+<!-- 2022-03-14 fligt added expanded -->
+<ul id="mysidebar" class="nav expanded">
   <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
   {% for entry in sidebar %}
   {% for folder in entry.folders %}
@@ -12,15 +13,15 @@
           {% for folderitem in folder.folderitems %}
           {% if folderitem.output contains "web" %}
           {% if folderitem.external_url %}
-          <li><a href="{{folderitem.external_url}}" target="_blank">1 {{folderitem.title}}</a></li>
+          <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
           {% elsif pageurl == folderitem.url %}
-          <li class="active"><a href="{{folderitem.url | relative_url}}">2 {{folderitem.title}}</a></li>
+          <li class="active"><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
           {% elsif folderitem.type == "empty" %}
-          <li><a href="{{folderitem.url | relative_url}}">3 {{folderitem.title}}</a></li>
+          <li><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
 
           {% else %}
           <!-- 2022-03-13 fligt inserted class="active"-->
-          <li><a class="active" href="{{folderitem.url | relative_url}}">4 {{folderitem.title}}</a></li>
+          <li><a class="active" href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
           {% endif %}
           {% for subfolders in folderitem.subfolders %}
           {% if subfolders.output contains "web" %}
@@ -30,12 +31,12 @@
                   {% for subfolderitem in subfolders.subfolderitems %}
                   {% if subfolderitem.output contains "web" %}
                   {% if subfolderitem.external_url %}
-                  <li><a href="{{subfolderitem.external_url}}" target="_blank">5 {{subfolderitem.title}}</a></li>
+                  <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
                   {% elsif pageurl == subfolderitem.url %}
-                  <li class="active"><a href="{{subfolderitem.url | relative_url}}">6 {{subfolderitem.title}}</a></li>
+                  <li class="active"><a href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
                   {% else %}
                   <!-- also here -->
-                  <li><a class="active" href="{{subfolderitem.url | relative_url}}">7 {{subfolderitem.title}}</a></li>
+                  <li><a class="active" href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
