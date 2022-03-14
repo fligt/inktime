@@ -9,7 +9,8 @@
   {% if folder.output contains "web" %}
   <li>
       <a href="#">{{ folder.title }}</a>
-      <ul>
+      <!-- and also here -->
+      <ul class="expanded">
           {% for folderitem in folder.folderitems %}
           {% if folderitem.output contains "web" %}
           {% if folderitem.external_url %}
